@@ -1,0 +1,11 @@
+ACHADINHOS DA BIA — VERSÃO COM PAINEL PROTEGIDO
+
+Conteúdo: index.html (catálogo público), admin/index.html (painel privado), netlify/functions (login e armazenamento protegido), netlify.toml e package.json.
+
+ANTES DE PUBLICAR: no painel do Netlify, configure em Site configuration > Environment variables:
+ADMIN_PASSWORD = uma senha forte escolhida por você.
+SESSION_SECRET = uma chave aleatória longa e diferente da senha.
+
+Não coloque essas senhas em arquivos do repositório nem as envie no chat. Depois de configurar, faça novo deploy para as funções receberem as variáveis.
+
+O primeiro acesso ao catálogo carrega os 10 produtos originais. O painel começa com esses mesmos produtos. Alterações só são gravadas no armazenamento compartilhado quando tocar em “Salvar alterações no catálogo público”.
